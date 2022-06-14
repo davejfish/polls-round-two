@@ -6,6 +6,10 @@
 1. Validate each line of code before moving forward
 1. Keep it Simple Simon (KISS)
 
+
+<img src='wireframe.png'>
+
+
 ## Making a plan
 
 1. Make a drawing of your app. **Simple "wireframes"**
