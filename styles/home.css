@@ -1,1 +1,140 @@
 /* CSS for home page (index.html) */
+
+main {
+    display: grid;
+    grid-template-areas: 
+        'current-poll'
+        'previous-polls'
+    ;
+}
+
+@media (min-width: 800px) {
+    main {
+        grid-template-areas: 
+            'current-poll previous-polls'
+        ;
+    }
+}
+
+form {
+    display: grid;
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: dashed 3px black;
+    background-color: #69385C;
+    color: white;
+}
+
+label {
+    display: contents;
+}
+
+.topic-display {
+    display: grid;
+    width: 400px;
+    grid-template-areas: 
+        'topic topic'
+        'optionA optionB'
+        'votesA votesB'
+    ;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 10px;
+    gap: 10px;
+    border: solid 1px black;
+    background-color: #69385C;
+    color: white;
+}
+
+#topic-voter {
+    display: grid;
+    width: 400px;
+    grid-template-areas: 
+        'upvote-A upvote-B'
+        'A B'
+        'down-vote-A down-vote-B'
+        'end-poll end-poll'
+    ;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 10px;
+    justify-items: center;
+    border: solid 1px black;
+    background-color: #69385C;
+    color: white;
+}
+
+#topic-voter button {
+    width: fit-content;
+}
+
+#previous-polls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 200px));
+    margin-top: 10px;
+    grid-gap: 10px;
+}
+
+#current-poll {
+    grid-area: current-poll;
+}
+
+#previous-polls {
+    grid-area: previous-polls;
+}
+
+.topic {
+    grid-area: topic;
+}
+
+.optionA {
+    grid-area: optionA;
+}
+
+.optionB {
+    grid-area: optionB;
+}
+
+.votesA {
+    grid-area: votesA;
+}
+
+.votesB {
+    grid-area: votesB;
+}
+
+.upvote-A {
+    grid-area: upvote-A;
+}
+
+.upvote-B {
+    grid-area: upvote-B;
+}
+
+.down-vote-A {
+    grid-area: down-vote-A;
+}
+
+.down-vote-B {
+    grid-area: down-vote-B;
+}
+
+.end-poll {
+    grid-area: end-poll;
+}
+
+.A {
+    grid-area: A;
+}
+
+.B {
+    grid-area: B;
+}
+
+h2 {
+    text-align: center;
+    width: 400px;
+    height: fit-content;
+}

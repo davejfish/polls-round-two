@@ -15,10 +15,87 @@
 <body>
     <header>
         <img src="assets/html_css_js.png">
-        <h1>Web MVC UI</h1>
+        <h1>poll creator!</h1>
     </header>
 
-    <main></main>
+    <main>
+        <section id="current-poll">
+            
+            <section id="create-topic">
+                <h2>create a topic</h2>
+                <div>
+                    <form>
+                        <label>
+                            topic
+                            <input>
+                        </label>
+                        <label>
+                            option A
+                            <input>
+                        </label>
+                        <label>
+                            option B
+                            <input>
+                        </label>
+                        <label>
+                            create
+                            <button>topic</button>
+                        </label>
+                    </form>
+                </div>
+            </section>
+            <section class="display-topic">
+                <div class="topic-display">
+                    <span class="topic">topic</span>
+                    <span class="optionA">optionA</span>
+                    <span class="optionB">optionB</span>
+                    <span class="votesA">0</span>
+                    <span class="votesB">0</span>
+                </div>
+            </section>
+            <section id="topic-voter">
+                <button class="upvote-A">+</button>
+                <button class="upvote-B">+</button>
+                <button class="down-vote-A">-</button>
+                <button class="down-vote-B">-</button>
+                <button class="end-poll">end polling</button>
+                <span class="A">A</span>
+                <span class="B">B</span>
+            </section>
+        </section>
+        <section id="previous-polls">
+            <h2>previous polls</h2>
+            <div class="topic-display">
+                <span class="topic">topic</span>
+                <span class="optionA">optionA</span>
+                <span class="optionB">optionB</span>
+                <span class="votesA">0</span>
+                <span class="votesB">0</span>
+            </div>
+            <div class="topic-display">
+                <span class="topic">topic</span>
+                <span class="optionA">optionA</span>
+                <span class="optionB">optionB</span>
+                <span class="votesA">0</span>
+                <span class="votesB">0</span>
+            </div>
+            <div class="topic-display">
+                <span class="topic">topic</span>
+                <span class="optionA">optionA</span>
+                <span class="optionB">optionB</span>
+                <span class="votesA">0</span>
+                <span class="votesB">0</span>
+            </div>
+            <div class="topic-display">
+                <span class="topic">topic</span>
+                <span class="optionA">optionA</span>
+                <span class="optionB">optionB</span>
+                <span class="votesA">0</span>
+                <span class="votesB">0</span>
+            </div>
+
+        </section>
+    </main>
 
     <footer>&copy;2021 Aspiring Software Developer</footer>
 
