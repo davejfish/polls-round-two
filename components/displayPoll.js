@@ -6,6 +6,13 @@ export default function createMyDisplay(root) {
     // should return its component render function
     // return ({ data }) => {
     return ({ poll }) => {
+        
+        if (!poll) {
+            root.classList.add('hidden');
+            return;
+        }
+        root.classList.remove('hidden');
+
         topic.textContent = poll.topic;
         optionA.textContent = poll.optionA;
         optionB.textContent = poll.optionB;

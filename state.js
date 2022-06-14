@@ -8,15 +8,15 @@ export function initialize() {
     // state.game = null;
     // state.pastGames = [];
 
-    state.poll = {
-        topic: 'burgers or dogs',
-        optionA: 'burgers',
-        optionB: 'dogs',
-        votesA: 30,
-        votesB: 50,
-    };
+    // state.poll = {
+    //     topic: 'burgers or dogs',
+    //     optionA: 'burgers',
+    //     optionB: 'dogs',
+    //     votesA: 30,
+    //     votesB: 50,
+    // };
 
-    // state.poll = null;
+    state.poll = null;
     state.previousPolls = [];
 }
 // call initialize
@@ -25,3 +25,12 @@ initialize();
 export default state;
 
 // export dispatch functions that modify state
+export function newPoll(topic, optionA, optionB) {
+    state.poll = {
+        topic: topic,
+        optionA: optionA,
+        optionB: optionB,
+        votesA: 0,
+        votesB: 0,
+    };
+}
