@@ -34,3 +34,27 @@ export function newPoll(topic, optionA, optionB) {
         votesB: 0,
     };
 }
+
+export function upVote(option) {
+    if (option === 'A') {
+        state.poll.votesA++;
+    }
+    if (option === 'B') {
+        state.poll.votesB++;
+    }
+}
+
+export function downVote(option) {
+    if (option === 'A') {
+        if (state.poll.votesA <= 0) return;
+        state.poll.votesA--;
+    }
+    if (option === 'B') {
+        if (state.poll.votesB <= 0) return;
+        state.poll.votesB--;
+    }
+}
+
+export function endPoll() {
+    console.log('ending the poll');
+}
