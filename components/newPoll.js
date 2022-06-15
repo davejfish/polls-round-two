@@ -7,7 +7,7 @@ export default function createNewPoll(root, { handleNewPoll }) {
 
         const data = new FormData(myForm);
 
-        handleNewPoll(data.get('topic'), data.get('option A'), data.get('option B'));
+        handleNewPoll(data.get('topic'), data.get('optionA'), data.get('optionB'));
     });
     // should return its component render function
     // return ({ data }) => {

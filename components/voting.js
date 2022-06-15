@@ -25,10 +25,9 @@ export default function createVotingButtons(root, {
     return ({ poll }) => {
         
         if (!poll) {
-            root.classList.add('hidden');
+            root.classList.value = ('topic-voter hidden');
             return;
         }
-
         root.classList.remove('hidden');
     };
 }

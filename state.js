@@ -56,5 +56,6 @@ export function downVote(option) {
 }
 
 export function endPoll() {
-    console.log('ending the poll');
+    state.previousPolls.push(state.poll);
+    state.poll = null;
 }
