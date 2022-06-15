@@ -8,7 +8,7 @@ main {
     ;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     main {
         grid-template-areas: 
             'current-poll previous-polls'
@@ -73,12 +73,14 @@ label {
 
 #previous-polls {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    max-height: 100px;
     grid-gap: 10px;
 }
 
 #current-poll {
     grid-area: current-poll;
+    width: 400px;
 }
 
 #previous-polls {
